@@ -7,12 +7,12 @@
 
         <link rel="stylesheet" href="./styles/style.css" />
 
-        <title>Pokedex</title>
+        <title>API Fetch</title>
     </head>
 
     <body>
         <header>
-            <h1>Who's That Pokemon?</h1>
+            <h1>Take Your Pick</h1>
         </header>
 
         <template id="template">
@@ -25,10 +25,14 @@
 
         <main>
             <select name="api" id="api">
-                <option value="none"></option>
-                <option value="star-wars"></option>
-                <option value="pokemon"></option>
+                <option value="none">Select an API</option>
+                <option value="star-wars">Pokemon</option>
+                <option value="pokemon">Star Wars</option>
             </select>
+
+            <ul id="list">
+
+            </ul>
         </main>
 
         <footer>&copy; 2021 Aspiring Software Developer</footer>
