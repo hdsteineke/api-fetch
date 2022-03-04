@@ -19,7 +19,7 @@ async function loadPokedex() {
         
         name.textContent = 'Name: ' + pokemon.pokemon;
 
-        type.textContent = 'Type: ' + pokemon.type;
+        type.textContent = 'Type: ' + pokemon.type_1;
         image.src = pokemon.url_image;
         image.alt = pokemon.pokedex;
 
@@ -40,9 +40,9 @@ async function loadStarWars() {
         const name = clone.querySelector('h2');
         const type = clone.querySelector('h6');
 
-        name.textContent = 'Name: ' + person.name;/*pokemon.pokemon;*/
+        name.textContent = 'Name: ' + person.name;
 
-        type.textContent = 'Homeworld: ' + person.homeworld; /*pokemon.type;*/
+        type.textContent = 'Eye Color: ' + person.eye_color; 
 
 
         list.appendChild(clone);

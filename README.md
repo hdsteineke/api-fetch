@@ -27,7 +27,10 @@ Additional considerations:
 
 Plan:
 
-1) Wireframe: ![pokedex wirefame](/assets/pokedexWireframe.png "pokedex");
+1) 
+
+![pokedex wirefame](/assets/pokedexWireframe.png "pokedex")
+
 2) HTML elements I'll need:
     - selector with options
     - template element for rendering pokemon info
