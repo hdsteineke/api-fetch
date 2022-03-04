@@ -26,6 +26,29 @@ async function loadPokedex() {
         list.appendChild(clone);
     }
 }
+
+import { getStarWarsPeople } from './fetch-utils.js';
+
+async function loadStarWars() {
+    const starwars = await getStarWarsPeople();
+    list.classList.add('star-wars');
+
+    for (let person of starwars) {
+        list.classList.add('star-wars');
+
+        const clone = template.content.cloneNode(true);
+        const name = clone.querySelector('h2');
+        const type = clone.querySelector('h6');
+
+        name.textContent = 'Name: ' + person.name;/*pokemon.pokemon;*/
+
+        type.textContent = 'Homeworld: ' + person.homeworld; /*pokemon.type;*/
+
+
+        list.appendChild(clone);
+    }}
+
+
 selector.addEventListener('change', async(e) => {
     const selected = e.target.value;
 
