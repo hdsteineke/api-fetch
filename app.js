@@ -4,7 +4,7 @@ import { getPokedex } from './fetch-utils.js';
 const template = document.querySelector('#template');
 const selector = document.querySelector('#api');
 const list = document.querySelector('#list');
-loadPokedex();
+
 
 async function loadPokedex() {
     const pokedex = await getPokedex();
@@ -26,6 +26,20 @@ async function loadPokedex() {
         list.appendChild(clone);
     }
 }
+selector.addEventListener('change', async(e) => {
+    const selected = e.target.value;
+
+    if (selected === 'pokemon') {
+        list.classList.remove('star-wars');
+        list.innerHTML = ' ';
+        await loadPokedex();
+    } 
+    else if (selected === 'star-wars') {
+        list.classList.remove('pokemon');
+        list.innerHTML = ' ';
+        await loadStarWars();
+    }
+});
 
 
 // set event listeners 
