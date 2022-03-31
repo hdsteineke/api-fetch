@@ -24,3 +24,37 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+Plan:
+
+1) 
+
+![pokedex wirefame](/assets/pokedexWireframe.png "pokedex")
+
+2) HTML elements I'll need:
+    - selector with options
+    - template element for rendering pokemon info
+    -headings for (pokemon stats?)
+    - create fetch-utils.js file
+    - export async function fuction getPokedex
+    - create constants to await fetch, and response.json, return json.results
+    ACP
+    - in app.js: grab DOM elements
+    - write async function
+    - for/let statement for rendering pokemon content
+    - ACP
+    - Add eventListener for event change
+    - be sure to add list.innerHTMl=" " to clear content when changing options
+
+
+
+## Example Rubric
+
+| App should include . . .                                                            |     |
+| :---------------------------------------------------------------------------------- | --: |
+| A list of information supplied from an API                                          |   0 |
+| An if/else statement is used                                                        |   0 |
+| README file with plan                                                               |   0 |
+| Repo has a commit history with multiple commits and commit messages that make sense |   0 |
+| Link in About section of repo to deployed site in Netlify                           |   0 |
+| Work is done on a dev branch and a PR link is submitted to Canvas                   |   0 |
